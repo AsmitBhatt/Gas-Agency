@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noida Gas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon.ico" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="newcss.css">
+</head>
+<body>
+    <header class="header">
+        <h1>NOIDA GAS AGENCY</h1>
+    </header>
+    
+    <nav class="sticky navbar">
+        <div class="brand display__logo">
+            <a href="#top" class="nav__link"><span class="logo">NOIDA GAS AGENCY</span></a>
+        </div>
+    
+        <input type="checkbox" id="nav" class="hidden" />
+        <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+        <div class="nav">
+            <ul class="nav__items">
+                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="#booking" class="nav_link">Booking</a></li>
+                <li class="nav_item"><a href="#admin" class="nav_link">Admin Login</a></li>
+                <li class="nav_item"><a href="#customer-login" class="nav_link">Customer Login</a></li>
+                <li class="nav_item"><a href="#customer-register" class="nav_link">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="home">
+            <div id="home" class="section active">
+                <header>
+                    <div class="container">
+                        <img src="Your paragraph text.jpg" alt="Noida Gas Logo" class="logo" />
+                        <h1>Welcome to <span class="highlight">Noida Gas</span></h1>
+                    </div>
+                </header>
+                <section class="main-content">
+                    <div class="container">
+                        <p>Welcome to Noida Gas. We provide reliable and efficient gas services for your home.</p>
+                        <p>From fueling kitchens extending across urban and rural landscapes to delivering clean fuel to industries, Noida Gas is known as 'your friendly gas'. We promptly respond to the call of duty even in the most challenging times and continue delivering happiness.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <section class="about">
+            <div id="about" class="section">
+                <div class="container">
+                    <h1>About <span class="highlight">Noida Gas</span></h1>
+                    <p>Noida Gas is a leading provider of LPG (liquefied petroleum gas) in India, catering to millions of households across the country. Established with a commitment to safety, reliability, and customer satisfaction, Noida Gas has been a trusted name for over 40 years.</p>
+                    <p>Our mission is to deliver clean, safe, and efficient energy solutions to every household, ensuring convenience and peace of mind for our customers.</p>
+                    <h2>Our Vision</h2>
+                    <p>To be the preferred choice for LPG in every household, driven by innovation, sustainability, and excellence in service.</p>
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li>Safety first</li>
+                        <li>Customer-centric approach</li>
+                        <li>Integrity and transparency</li>
+                        <li>Continuous improvement</li>
+                        <li>Sustainability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="booking">
+            <div id="booking" class="section">
+                <div class="container">
+                    <h1>Gas Booking</h1>
+                    <form id="bookingForm" onsubmit="submitForm(event)" autocomplete="off">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required />
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="2" placeholder="Address" required></textarea>
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required />
+                        <label for="regNo">Registration Number:</label>
+                        <input type="text" id="regNo" name="regNo" placeholder="Gas Register Number" required />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <button type="submit" id="bookButton">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="admin">
+            <div id="admin" class="section">
+                <div class="container">
+                    <h2>Admin Login</h2>
+                    <form id="adminLoginForm" autocomplete="off">
+                        <label for="adminUsername">Username:</label>
+                        <input type="text" id="adminUsername" name="adminUsername" placeholder="Username" required />
+                        <label for="adminPassword">Password:</label>
+                        <input type="password" id="adminPassword" name="adminPassword" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="customer-login">
+            <div id="customer-login" class="section">
+                <div class="container">
+                    <h2>Customer Login</h2>
+                    <form id="customerLoginForm" autocomplete="off">
+                        <label for="customerUsername">Username:</label>
+                        <input type="text" id="customerUsername" name="customerUsername" placeholder="Username" required />
+                        <label for="customerPassword">Password:</label>
+                        <input type="password" id="customerPassword" name="customerPassword" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="customer-register">
+            <div id="customer-register" class="section">
+                <div class="container">
+                    <h2>Customer Registration</h2>
+                    <form id="customerRegisterForm" autocomplete="off">
+                        <label for="customerFullname">Full Name:</label>
+                        <input type="text" id="customerFullname" name="customerFullname" placeholder="Enter Your Full Name" required />
+                        <label for="customerEmail">Email:</label>
+                        <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter Your Email" required />
+                        <label for="customerPassword2">Password:</label>
+                        <input type="password" id="customerPassword2" name="customerPassword" placeholder="Create Your Password" required />
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <!--<h1>Footer</h1>-->
+            <p>&copy; 2024 Noida Gas Agency. All rights reserved.</p>
+            <p>Content on this website is Published and Managed by Noida Gas Agency. For any query regarding this website, contact No.: +91-22-36452235, +91-22-34525633 Email ID: noidaGas@gmail.com Best viewed on "Google Chrome v80+, Firefox v80+ and Microsoft Edge". Site designed & developed by Asmit Bhatt.</p>
+        </div>
+    </footer>
+</body>
+</html>
