@@ -1,1 +1,1 @@
-# Gas-Agency
+A Gas Agency System, including Home, About Us, Booking, Admin Login, Customer Login, and Customer Registration. These pages will utilize HTML, CSS, and JavaScript.
